@@ -2,7 +2,7 @@
 display: grid;
 grid-template-areas: 
 "header header header"
-"nav article article"
+"article article article"
 "footer footer footer";
 grid-template-rows: 10vw 1fr 40px;
 grid-template-columns: 20% 1fr 15%;
@@ -13,6 +13,30 @@ background-image: url("backgroundcomputer.jpg");
 background-size: cover;
 }
 
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #E7E7E7;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 
 
 #pageTitle {
@@ -41,12 +65,11 @@ grid-area: footer;
 #article { 
 grid-area: article;      
 }
-#nav { 
-grid-area: nav; 
-}
 
 
-header, footer, article, nav {
+
+
+header, footer, article {
 padding: 10px;
 background: rgb(0, 0, 0); /* Fallback color */
 background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
@@ -54,11 +77,11 @@ color: rgb(255, 255, 255);
 }
 
 .fade-in {
-  animation: fadeIn ease 6s;
-  -webkit-animation: fadeIn ease 6s;
-  -moz-animation: fadeIn ease 6s;
-  -o-animation: fadeIn ease 6s;
-  -ms-animation: fadeIn ease 6s;
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
 }
 @keyframes fadeIn {
   0% {
@@ -94,6 +117,44 @@ color: rgb(255, 255, 255);
   100% {
     opacity:1;
   }
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 90vw;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 11vw ;
+  left: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, .8); /* Black background with 0.5 opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 36px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #D3D3D3;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ECFFA7;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 
