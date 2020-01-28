@@ -4,13 +4,123 @@ grid-template-areas:
 "header header header"
 "article article article"
 "footer footer footer";
-grid-template-rows: 10vw 1fr 40px;
-grid-template-columns: 20% 1fr 15%;
+grid-template-rows: 10vw 78vh 8vh;
+/*grid-template-columns: 20% 1fr 15%;*/
 grid-gap: 10px;
-height: 100vh;
+height: 100%;
 margin: 0;
 background-image: url("backgroundcomputer.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
 background-size: cover;
+}
+#myHeader { 
+grid-area: header; 	
+}
+#footer {
+grid-area: footer;
+}
+#article { 
+grid-area: article;
+display: grid;
+grid-template-areas: 
+"first second"
+"third third";
+
+grid-template-columns: 50% 50%;
+grid-gap: 10px;
+}
+
+
+#pageTitle {
+
+background-color: white;
+color: black;
+font-size: 8vw;
+top: 4.5vw;
+font-weight: bold;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+margin: 0 auto;
+padding: 10px;
+position: absolute;
+text-align: center;
+white-space: nowrap;
+left: 50%;
+transform: translate(-50%, -50%);
+mix-blend-mode: screen;
+}
+
+
+header, footer, article {
+padding:10px;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5); /* Black background with 0.5*/
+color: rgb(255, 255, 255);
+}
+article {
+	padding:0px;
+	
+
+}
+h1{
+	font-size: 3vw; 
+	font-weight: bold;
+
+}
+
+ol {
+	list-style-position: inside;
+	padding:0;
+	font-size: 2vw;
+}
+
+#first{
+	height: 60vh;
+	width: 90vw;
+	/*box-shadow: 0 0 2px 4px rgba(255,255,255,.7);*/
+	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;	
+	font-weight: bold;
+	color: rgb(0, 0, 0, 0);  
+ 	animation: addText 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	line-height: 4vh;
+}
+@keyframes addText {
+  from {font-size: 0vw; }
+  to {
+	  font-size: 6vw;
+	  color: rgb(255, 255, 255, 1);  
+	}
+}
+#top{
+	margin: 2%
+}
+#middle{
+	margin-left:17%;
+
+}
+#bottom{
+	margin-left:15%;
+
+}
+
+#second{
+	margin-left: auto;
+	margin-right: 0;
+	width: 50%;
+	opacity: 0;
+	animation: addList 2s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes addList {
+  from {	opacity: 0; }
+  to {
+	opacity: 1;;  
+	}
 }
 
 .container {
@@ -39,42 +149,17 @@ background-size: cover;
 }
 
 
-#pageTitle {
-grid-area: header;
-background-color: white;
-color: black;
-font-size: 8vw; 
-font-weight: bold;
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-margin: 0 auto;
-padding: 10px;
-position: absolute;
-text-align: center;
-top: 4vw;
-left: 50%;
-transform: translate(-50%, -50%);
-mix-blend-mode: screen;
-	
-}
-#header { 
-grid-area: header; 
-}
-#footer {
-grid-area: footer;
-}
-#article { 
-grid-area: article;      
+
+.parallax{
+	height:0px;
+	background: rgb(255, 255, 255); 
+	background: rgba(255, 255, 255, 0.8); 
+	color:#0F0F0F;
+	font-weight: bold;
+	font-size:36px;	
 }
 
 
-
-
-header, footer, article {
-padding: 10px;
-background: rgb(0, 0, 0); /* Fallback color */
-background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-color: rgb(255, 255, 255);
-}
 
 .fade-in {
   animation: fadeIn ease 4s;
@@ -121,7 +206,7 @@ color: rgb(255, 255, 255);
 
 /* The side navigation menu */
 .sidenav {
-  height: 100vw;
+  height: 90vw;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -132,6 +217,13 @@ color: rgb(255, 255, 255);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+
+
+
+}
+.addLinks {
+opacity: 1;
 }
 
 /* The navigation menu links */
@@ -143,6 +235,7 @@ color: rgb(255, 255, 255);
   color: #D3D3D3;
   display: block;
   transition: 0.3s;
+
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -156,6 +249,92 @@ color: rgb(255, 255, 255);
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb(0,0,0,.3);
+  font-size: 18px;
+  transition: 0.2s;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: rgb(250,250,250,.5);
+	color:#000000;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+   background: rgb(250,250,250,.8);
+}
+ul li:nth-child(even):hover {
+  background: rgb(0,0,0,.6);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: rgb(0,0,0,.6);;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked:before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+
+/* Style the header */
+.header {
+  background-color: rgb(0,0,0,.3);
+  padding: 10px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+  display: table;
+  clear: both;
+}
+
+
+.arrow i {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.arrow i:hover {
+  transform: rotateZ(-90deg);
+}
+
+
 
 
   

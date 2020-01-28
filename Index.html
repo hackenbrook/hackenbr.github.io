@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web Design</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="myScript.js"></script>
+    </head>
+
+    <body>
+		<div class="page">
+			<header id="myHeader">
+				<div id ="pageTitle" class="fade-in">
+				Web Design
+				</div>
+				
+				<div class="container" onclick="myFunction(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+			
+			</header>
+			
+        <article id = "article">
+			<div id="first">
+				<p id="top">Welcome</p>
+				<p id ="middle">to </p>
+				<p id = "bottom">Web Design</p>
+			</div>
+			
+			<div id="second">
+				  <h2 class="arrow">
+					  <i class="fa fa-arrow-left" style="color: aliceblue" onClick="expandList(this)"></i>
+					  To Do List
+				 </h2>
+				<div id="list">
+					<ul id="myUL">
+					  <li>Course Outline</li>
+					  <li>Complete Form</li>
+					  <li>Explore Websites</li>
+					 
+					</ul>
+				</div>
+			</div>
+			<div id="third">
+			<div class="parallax">
+		
+			</div>
+		</div>
+            
+        </article>
+		
+			<div id="mySidenav" class="sidenav">
+				<a href="Index.html">Home</a>
+				<a href="Index.html">Resources</a>
+				<a href="visualComposition.html">Visual Composition</a>
+				<a href="#">Client Side Scripting</a>
+				<a href="#">Web Design</a>
+				<a href="#">CSS</a>
+				<a href="#">Project C</a>
+			</div>
+	
+
+		
+		
+        <footer id = "footer">
+			<p>Contact: dyhackenbrook@cbe.ca</p>
+        </footer>
+		</div>
+		
+		<script>
+			
+
+			// Add a "checked" symbol when clicking on a list item
+			var list = document.querySelector('ul');
+			list.addEventListener('click', function(ev) {
+			if (ev.target.tagName === 'LI') {
+			ev.target.classList.toggle('checked');
+			}
+			}, false);
+
+		
+		</script>
+    </body>
+
+</html>
