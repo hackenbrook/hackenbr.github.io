@@ -153,6 +153,9 @@ form {
 	cursor: pointer;
 	display: inline;
 }
+button {
+	cursor: pointer;
+}
 
 
 
