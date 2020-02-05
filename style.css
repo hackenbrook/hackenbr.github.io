@@ -149,6 +149,11 @@ mix-blend-mode: screen;
 	font-size:36px;
 }
 
+form {
+	cursor: pointer;
+	display: inline;
+}
+
 
 
 /*-----------------------------------------------------*/
