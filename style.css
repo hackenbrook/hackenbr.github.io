@@ -91,17 +91,16 @@ mix-blend-mode: screen;
 	width: 90vw;
 	/*box-shadow: 0 0 2px 4px rgba(255,255,255,.7);*/
 	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-	font-weight: bold;
 	color: rgb(0, 0, 0, 0);
  	animation: addText 2s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
-	line-height: 4vh;
+	line-height: 3.5vh;
 }
 @keyframes addText {
   from {font-size: 0vw; }
   to {
-	  font-size: 6vw;
+	  font-size: 5vw;
 	  color: rgb(255, 255, 255, 1);
 	}
 }
