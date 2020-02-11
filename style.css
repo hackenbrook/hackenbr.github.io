@@ -69,6 +69,7 @@ mix-blend-mode: screen;
 
 }
 a{
+	font-size: 8vw;
 	color:white;
 	font-size: 4vw;
 }
