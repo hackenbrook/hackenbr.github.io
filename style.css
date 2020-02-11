@@ -68,10 +68,9 @@ mix-blend-mode: screen;
 .column1{
 
 }
-a{
-	font-size: 4.5vw;
+
 	color:white;
-	font-size: 4vw;
+	font-size:3vw;
 }
 
 a:hover {
