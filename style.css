@@ -68,6 +68,14 @@ mix-blend-mode: screen;
 .column1{
 
 }
+a{
+	color:white;
+	font-size: 4vw;
+}
+
+a:hover {
+	color:#ECFF65;
+}
 
 .column2{
 	margin-left: auto;
