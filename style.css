@@ -184,6 +184,7 @@ button {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
  -webkit-transform: translate(100px, 0px);
   transform: rotate(-45deg) translate(-9px, 6px);
+transform: translate(100px, 0px);
 }
 
 .change .bar2 {opacity: 0;
@@ -193,6 +194,7 @@ button {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
  -webkit-transform: translate(100px, 0px);
   transform: rotate(45deg) translate(-8px, -8px);
+	transform: translate(100px, 0px);
 }
 
 /*Title Animations*/
