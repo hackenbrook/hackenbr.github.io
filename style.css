@@ -139,7 +139,7 @@ a:hover {
 
 .links a{
 	color:white;
-	font-size: 4vw;
+	
 }
 
 .links a:hover {
@@ -147,14 +147,14 @@ a:hover {
 }
 
 /*Parallax Scroll, not really working yet*/
-.parallax{
+/*.parallax{
 	height:0px;
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.8);
 	color:#F9F4F4;
 	font-weight: bold;
 	font-size:36px;
-}
+}*/
 
 form {
 	cursor: pointer;
