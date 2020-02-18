@@ -194,7 +194,7 @@ transform: rotate(45deg) translate(200px, 0px);
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
  -webkit-transform: translate(100px, 0px);
   transform: rotate(45deg) translate(-8px, -8px);
-	transform:  rotate(45deg) translate(200px, 0px);
+	transform:  translate(200px, 0px);
 	z-index:1;
 }
 
