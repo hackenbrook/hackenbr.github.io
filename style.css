@@ -182,13 +182,16 @@ button {
 
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+ -webkit-transform: translate(100px, 0px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {opacity: 0;
+-webkit-transform: translate(100px, 0px);}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+ -webkit-transform: translate(100px, 0px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
