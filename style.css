@@ -194,10 +194,8 @@ z-index:1;
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
  -webkit-transform: translate(100px, 0px);
- 
- transform:  translate(300px, 0px);
- transform: rotate(45deg);
-	z-index:1;
+ transform: translate(300px, 0px) rotate(45deg);
+ z-index:1;
 }
 
 /*Title Animations*/
@@ -247,7 +245,7 @@ z-index:1;
 /*-----------------------------------------------------*/
 /* The side navigation menu */
 .sidenav {
-  height: 90vw;
+  height: 0vw;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
