@@ -183,11 +183,13 @@ button {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
  -webkit-transform: translate(100px, 0px);
-transform: translate(300px, 0px) rotate(-45deg);
+	transform: translate(300px, 0px) rotate(-45deg);
 }
 
-.change .bar2 {opacity: 0;
--webkit-transform: translate(200px, 0px);}
+.change .bar2 {
+	opacity: 0;
+	-webkit-transform: translate(200px, 0px);
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -246,7 +248,7 @@ transform: translate(300px, 0px) rotate(-45deg);
   height: 90vw;
   width: 0; /* 0 width - change this with JavaScript */
   position: relative; /* Stay in place */
-  z-index: 2; /* Stay on top */
+  z-index: 1; /* Stay on top */
   top: 0vw ;
   left: 0;
   background: rgb(0, 0, 0); /* Fallback color */
