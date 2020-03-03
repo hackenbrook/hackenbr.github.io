@@ -247,7 +247,7 @@ button {
 .sidenav {
   height: 90vw;
   width: 0; /* 0 width - change this with JavaScript */
-  position: relative; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0vw ;
   left: 0;
