@@ -6,7 +6,7 @@ function myFunction(x) {
 	if (side == 0 || side == "0px") {
 
 		document.getElementById("mySidenav").style.width = "400px";
-		document.getElementById("mySidenav").style.zIndex = "1";
+
 		
 	
 		
@@ -14,7 +14,7 @@ function myFunction(x) {
 	}
 	else {
 		document.getElementById("mySidenav").style.width = "0";
-		document.getElementById("mySidenav").style.zIndex = "2";
+
 	}
 
 }
