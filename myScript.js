@@ -7,6 +7,7 @@ function myFunction(x) {
 
 		document.getElementById("mySidenav").style.width = "400px";
 		document.getElementById("mySidenav").style.zIndex = "1";
+		document.getElementsByClassName("change bar1").style.zIndex = "2";
 	
 		
 
