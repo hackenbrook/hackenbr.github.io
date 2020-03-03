@@ -6,7 +6,7 @@ function myFunction(x) {
 	if (side == 0 || side == "0px") {
 
 		document.getElementById("mySidenav").style.width = "400px";
-		document.getElementsByClassName("change bar3").style.transform= "translate(300px, 0px) rotate(-45deg)";
+		document.getElementById("mySidenav").style.z-index = "2";
 		
 
 	}
