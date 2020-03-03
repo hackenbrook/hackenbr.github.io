@@ -6,7 +6,7 @@ function myFunction(x) {
 	if (side == 0 || side == "0px") {
 
 		document.getElementById("mySidenav").style.width = "400px";
-		document.getElementsByClassName("bar3").style.width = "100px";
+		document.getElementsByClassName("change bar3").style.width = "100px";
 
 	}
 	else {
