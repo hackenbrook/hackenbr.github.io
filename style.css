@@ -246,7 +246,7 @@ transform: translate(300px, 0px) rotate(-45deg);
 .sidenav {
   height: 90vw;
   width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 2; /* Stay on top */
   top: 0vw ;
   left: 0;
