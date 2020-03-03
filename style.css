@@ -171,10 +171,8 @@ button {
 .container {
   display: inline-block;
   cursor: pointer;
-  position: absolute;
 }
 .bar1, .bar2, .bar3 {
- position: absolute;
   width: 35px;
   height: 5px;
   background-color: #E7E7E7;
@@ -183,7 +181,6 @@ button {
 }
 
 .change .bar1 {
-	  position: absolute;
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
  -webkit-transform: translate(100px, 0px);
 transform: translate(300px, 0px) rotate(-45deg);
@@ -193,7 +190,6 @@ transform: translate(300px, 0px) rotate(-45deg);
 -webkit-transform: translate(200px, 0px);}
 
 .change .bar3 {
-	  position: absolute;
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
  -webkit-transform: translate(100px, 0px);
  transform: translate(300px, 0px) rotate(45deg);
