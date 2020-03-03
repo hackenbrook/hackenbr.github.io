@@ -173,6 +173,7 @@ button {
   cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
+ position: absolute;
   width: 35px;
   height: 5px;
   background-color: #E7E7E7;
