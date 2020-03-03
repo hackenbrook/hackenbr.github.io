@@ -247,7 +247,7 @@ z-index:1;
   height: 90vw;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0vw ;
   left: 0;
   background: rgb(0, 0, 0); /* Fallback color */
