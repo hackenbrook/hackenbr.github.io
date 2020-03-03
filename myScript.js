@@ -14,6 +14,7 @@ function myFunction(x) {
 	}
 	else {
 		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("mySidenav").style.zIndex = "2";
 	}
 
 }
