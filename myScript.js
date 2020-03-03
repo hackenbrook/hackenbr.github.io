@@ -7,6 +7,7 @@ function myFunction(x) {
 
 		document.getElementById("mySidenav").style.width = "400px";
 		document.getElementsByClassName("bar3").style.z-index = "1";
+		document.getElementsByClassName("bar1").style.z-index = "1";
 	}
 	else {
 		document.getElementById("mySidenav").style.width = "0";
