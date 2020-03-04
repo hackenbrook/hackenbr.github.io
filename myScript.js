@@ -7,10 +7,6 @@ function myFunction(x) {
 
 		document.getElementById("mySidenav").style.width = "400px";
 
-		
-	
-		
-
 	}
 	else {
 		document.getElementById("mySidenav").style.width = "0";
