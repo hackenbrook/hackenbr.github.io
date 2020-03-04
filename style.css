@@ -1,23 +1,23 @@
 
 /*Background and Page settings*/
 .page {
-display: grid;
-grid-template-areas:
-"header header header"
-"article article article"
-"footer footer footer";
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"article article article"
+	"footer footer footer";
 
-/*grid-template-columns: 20% 1fr 15%;*/
+	/*grid-template-columns: 20% 1fr 15%;*/
 
-grid-auto-rows: 10vw minmax(78vh,auto) 8vh;
-grid-gap: 10px;
+	grid-auto-rows: 10vw minmax(78vh,auto) 8vh;
+	grid-gap: 10px;
 
-margin: 0;
-background-image: url("backgroundcomputer.jpg");
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+	margin: 0;
+	background-image: url("backgroundcomputer.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /*Setting up Grids*/
@@ -246,7 +246,7 @@ button {
 /* The side navigation menu */
 .sidenav {
   height: 90vw;
-  width: 0; /* 0 width - change this with JavaScript */
+  width: 400; /* 0 width - change this with JavaScript */
   position: absolute; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0vw ;
@@ -266,7 +266,7 @@ opacity: 1;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 36px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #D3D3D3;
   display: block;
   transition: 0.3s;
