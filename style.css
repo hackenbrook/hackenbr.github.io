@@ -247,7 +247,7 @@ button {
 /* The side navigation menu */
 .sidenav {
   height: 90vw;
-  width: 400; /* 0 width - change this with JavaScript */
+  width: 0; /* 0 width - change this with JavaScript */
   position: absolute; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0vw ;
