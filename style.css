@@ -183,7 +183,7 @@ button {
 .change .bar1 {
  	 -webkit-transform: rotate(-45deg) translate(-9px, 6px);
  	-webkit-transform: translate(100px, 0px);
-	transform: translate(300px, 17.5px) rotate(-45deg);
+	transform: translate(300px, 10px) rotate(-45deg);
 	z-index:2;
 }
 
@@ -195,7 +195,7 @@ button {
 .change .bar3 {
   	-webkit-transform: rotate(45deg) translate(-8px, -8px);
  	-webkit-transform: translate(100px, 0px);
- 	transform: translate(300px, -17.5px) rotate(45deg);
+ 	transform: translate(300px, -10px) rotate(45deg);
 
 }
 
