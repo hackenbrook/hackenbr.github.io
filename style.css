@@ -178,6 +178,8 @@ button {
   background-color: #E7E7E7;
   margin: 6px 0;
   transition: 0.4s;
+	z-index:2;
+	position:absolute;
 }
 
 .change .bar1 {
