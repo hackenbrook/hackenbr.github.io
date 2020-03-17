@@ -107,14 +107,10 @@ a:hover {
 	line-height: 3.5vh;
 }
 #anncoucements {
-	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-	color: rgb(0, 0, 0, 0);
 	color: rgb(0, 0, 0, 0);
  	animation: fadeIn 2s;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
-	font-size: 4vh;
-	line-height: 3.5vh;
 }
 @keyframes addText {
   from {font-size: 0vw; }
