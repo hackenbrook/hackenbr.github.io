@@ -106,12 +106,17 @@ a:hover {
 	animation-fill-mode: forwards;
 	line-height: 3.5vh;
 }
-#anncoucements {
-	color: rgb(0, 0, 0, 0);
+#annoucements {
+	opacity: 0;
 	animation: fadeIn 2s;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
- 
+	list-style-position: inside;
+	padding:0;
+	font-size: 2.5vw;
+	line-height: 6vh;
+	width: 65%;
+	font-family:"Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 @keyframes addText {
   from {font-size: 0vw; }
