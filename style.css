@@ -305,12 +305,12 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 /*-----------------------------------------------------*/
 /*To Do List*/
 /* Remove margins and padding from the list */
-ul {
+#myUL {
   margin: 0;
   padding: 0;
 }
 /* Style the list items */
-ul li {
+#myUL li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -326,28 +326,28 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+#myUL li:nth-child(odd) {
   background: rgb(250,250,250,.5);
 	color:#000000;
 }
 
 /* Darker background-color on hover */
-ul li:hover {
+#myUL li:hover {
    background: rgb(250,250,250,.8);
 }
-ul li:nth-child(even):hover {
+#myUL li:nth-child(even):hover {
   background: rgb(0,0,0,.6);
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+#myUL li.checked {
   background: rgb(0,0,0,.6);;
   color: #fff;
   text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked:before {
+#myUL li.checked:before {
   content: '';
   position: absolute;
   border-color: #fff;
