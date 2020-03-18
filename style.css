@@ -104,7 +104,6 @@ a:hover {
  	animation: addText 2s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
-	line-height: 3.5vh;
 }
 #annoucements {
 	opacity: 0;
