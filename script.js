@@ -18,7 +18,7 @@ function scrollDown() {
 }
 
 function contact() {
-    prompt("Please tell us your name","Name:");
-    prompt("Enter an email we can contact you at","Name:");
+    prompt("Please tell us your name","name");
+    prompt("Enter an email we can contact you at","email");
 }
 		
