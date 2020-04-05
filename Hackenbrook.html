@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HackenbrookDJ</title>
+	<link rel="stylesheet" href="DJStyle.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+    
+<body onscroll="scrollDown()">
+	
+	<video autoplay muted loop id="myVideo">
+	  <source src="Night Life Party.mp4" type="video/mp4">
+	</video>
+
+	<div class="text">HACKENBROOK</div>
+	<audio id="myAudio" loop>
+	  <source src="FallingLoop.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<button id="button" onClick="playAudio()">
+	  <i class="fas fa-volume-up" style="font-size:24px"></i>
+	</button>
+    
+    <div id="scrollDown" class="scroll-down" onscroll="scrollDown()">
+        <div class="mouse">
+            <div class="scroll"></div>
+        </div>
+    </div>
+    
+    <div class="pictures"> Social Media
+        <div class="icons">
+            <a href=""><i class="fab fa-twitch"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <button class="subscribe" onClick="contact()">Subscribe</button>
+        </div>
+    </div>
+
+
+</body>
+   
+</html>
