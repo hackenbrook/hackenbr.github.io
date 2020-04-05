@@ -45,7 +45,7 @@ html, body {
   to { color: rgba(200, 200, 200, 0.4); }
 }
 
-#button {
+#myButton {
   font-size: 16px;
   color: #eee;
   position: fixed;
@@ -59,27 +59,31 @@ html, body {
   outline: none;
   background: rgba(80,80 , 80, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  opacity: 0.9;
+  opacity: 0.4;
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
 
-.buton:hover {
-	width: 100px;
-	background-color: #E0FF00;
+#myButton:hover {
+    opacity: 0.9;
 }
 
 
-#button.fade:hover {
-  opacity: 0.8;
+.buttonMove {
+    animation-name: moveButton;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-.fadeAudioButton {
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
+@keyframes moveButton {
+    from {  top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    to {top:0;left:0;transform: translate(0,0);}
+
 }
+
+
+
 
 .scroll-down{
     width:34px;

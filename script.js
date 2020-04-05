@@ -9,7 +9,7 @@ function playAudio() {
     document.getElementById("myAudio").play();
     isPlaying = true;
   }
-    document.getElementById("button").classList.add("fadeAudioButton");
+    document.getElementById("myButton").classList.add("buttonMove");
 }
 
 function scrollDown() {
@@ -18,7 +18,7 @@ function scrollDown() {
 }
 
 function contact() {
-    prompt("Please tell us your name","Name:")
-    prompt("Enter an email we can contact you at","Name:")
+    prompt("Please tell us your name","Name:");
+    prompt("Enter an email we can contact you at","Name:");
 }
 		
