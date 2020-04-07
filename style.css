@@ -66,11 +66,14 @@ mix-blend-mode: screen;
 	grid-gap: 10px;
 }
 
-/*Page Columns*/
+/*Page Columns
 .column1{
 	width: 50%;
 
 }
+.column2{
+	width: 50%;
+}*/
 a{
 	color:white;
 	font-size:1em;
@@ -80,10 +83,7 @@ a:hover {
 	color:#ECFF65;
 }
 
-.column2{
-	margin-left: auto;
-	width: 50%;
-}
+
 .articleFooter {
 
 		margin-left: auto;
