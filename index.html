@@ -1,116 +1,112 @@
-ay<!doctype html>
+<!doctype html>
 <html>
-    <head>
-        <title>Web Design</title>
-        <link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="myScript.js"></script>
-    </head>
 
-    <body>
-		<div class="page">
-			<header class="header">
-				<div id ="pageTitle" class="fade-in">
-				Web Design
-				</div>
+<head>
+  <title>Web Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="myScript.js"></script>
+</head>
 
-				<div class="container" onclick="myFunction(this)">
-				  <div class="bar1"></div>
-				  <div class="bar2"></div>
-				  <div class="bar3"></div>
-				</div>
+<body>
+  <div class="page">
+    <header class="header">
+      <div id="pageTitle" class="fade-in">
+        Web Design
+      </div>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
 
-			</header>
+    <article class="article">
 
-        <article class = "article">
+      <div class="articleGrid">
 
-			<div class="articleGrid">
-
-				<div class="column1" id="transition">
-							<p id="top"><u>Annoucements</u></p>
-					<!--<p id ="middle">to </p>
+        <div class="column1" id="transition">
+          <p id="top"><u>Annoucements</u></p>
+          <!--<p id ="middle">to </p>
 					<p id = "bottom">Web Design</p>-->
-					<p id="annoucements"><u>Tuesday April 7th</u> <br>
-					Please check this site daily for updates.<br>
-					<br>
-					This week we will be working on Assignment 5, adding JavaScript to our webpages. There is a tutorial video I created
-					to add a simple JavaScript button. Later in the week I will also post a video on how to tigger an animation with JavaScript.<br>
-					I will be available for video conferencing during our regular classtimes hours except for Monday: Tuesday and Thursday 9am-10:15. Wednesday and Friday 11am-12:15<br>
-					Please refer to the student code of conduct for appriopriate online behaviour.
-					<a href="https://www.cbe.ab.ca/GovernancePolicies/AR6005-Student-Code-of-Conduct.pdf">Student Code of Conduct</a>
-					<br>
-					<br>
-					<a href="https://meet.google.com/dxi-tuzj-fsj"> Video Conferencing Link</a>
-					<br>
-					<br>
-					Email me if you have any questions.
-					</p>
-				</div>
+          <p id="annoucements"><u>Tuesday April 7th</u> <br>
+            Please check this site daily for updates.<br>
+            <br>
+            This week we will be working on Assignment 5, adding JavaScript to our webpages. There is a tutorial video I created
+            to add a simple JavaScript button. Later in the week I will also post a video on how to tigger an animation with JavaScript.<br>
+            I will be available for video conferencing during our regular classtimes hours except for Monday: Tuesday and Thursday 9am-10:15. Wednesday and Friday 11am-12:15<br>
+            Please refer to the student code of conduct for appriopriate online behaviour.
+            <a href="https://www.cbe.ab.ca/GovernancePolicies/AR6005-Student-Code-of-Conduct.pdf">Student Code of Conduct</a>
+            <br>
+            <br>
+            <a href="https://meet.google.com/dxi-tuzj-fsj"> Video Conferencing Link</a>
+            <br>
+            <br>
+            Email me if you have any questions.
+          </p>
+        </div>
 
-				<div class="column2">
+        <div class="column2">
 
-					<div id="myList">
-						<h2 class="arrow">
-							  <i class="fa fa-arrow-left" style="color: aliceblue" onClick="expandList(this)"></i>
-							  To Do List
-						 </h2>
+          <div id="toDoList">
+            <h2 class="arrow">
+              <i class="fa fa-arrow-left" style="color: aliceblue" onClick="expandList(this)"></i>
+              To Do List
+            </h2>
 
-						<ul id="myUL">
-						  <li><a href="https://codepen.io/davidcochran/pen/WbWXoa">CodePen JavaScript Example</a></li>
-						  <li><a href="https://www.w3schools.com/js/"> Practice JavaScript </a><l/i>
-						  <li><a href="https://www.ohyouprettythings.com/free"> Helvetica Documentary </a></li>
-					          <li><a href="Assignment_5.docx"> Assignment 5 </a></li>  
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-		<div class="curriculum">
-			<div class="articleFooter">
-				<!-- Auto width -->
+            <ul id="myUL">
+              <li><a href="https://codepen.io/davidcochran/pen/WbWXoa">CodePen JavaScript Example</a></li>
+              <li><a href="https://www.w3schools.com/js/"> Practice JavaScript </a>
+                <l /i>
+              <li><a href="https://www.ohyouprettythings.com/free"> Helvetica Documentary </a></li>
+              <li><a href="Assignment_5.docx"> Assignment 5 </a></li>
+            </ul>
+          </div>
 
-				<span> Course Outline</span>
-				<form method="get" action="Web Design Course Outline.docx">
-  					 <button type="submit">
-						 <i class="fa fa-download"></i>
-						 Download
-					</button>
-				</form>
-			</div>
-									 
-		</div>
-        </article>
+        </div>
+      </div>
+      <div class="curriculum">
+        <div class="articleFooter">
+          <!-- Auto width -->
 
-			<div id="mySidenav" class="sidenav">
-				<a href="index.html">Home</a>
-				<a href="resources.html">Resources</a>
-				<a href="visualComposition.html">Visual Composition</a>
-				<a href="typography.html">Typography</a>
-				<a href="clientSideScripting.html">Client Side Scripting</a>
-				<a href="webDesign.html">Web Design</a>
-			</div>
+          <span> Course Outline</span>
+          <form method="get" action="Web Design Course Outline.docx">
+            <button type="submit">
+              <i class="fa fa-download"></i>
+              Download
+            </button>
+          </form>
+        </div>
 
+      </div>
+    </article>
 
-
-
-        <footer class = "footer">
-			<p>Contact: dyhackenbrook@cbe.ab.ca</p>
-        </footer>
-		</div>
-
-		<script>
+    <div id="mySidenav" class="sidenav">
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="visualComposition.html">Visual Composition</a>
+      <a href="typography.html">Typography</a>
+      <a href="clientSideScripting.html">Client Side Scripting</a>
+      <a href="webDesign.html">Web Design</a>
+    </div>
 
 
-			// Add a "checked" symbol when clicking on a list item
-			var list = document.querySelector('ul');
-			list.addEventListener('click', function(ev) {
-			if (ev.target.tagName === 'LI') {
-			ev.target.classList.toggle('checked');
-			}
-			}, false);
 
 
-		</script>
-    </body>
+    <footer class="footer">
+      <p>Contact: dyhackenbrook@cbe.ab.ca</p>
+    </footer>
+  </div>
+
+  <script>
+    // Add a "checked" symbol when clicking on a list item
+    var list = document.querySelector('ul');
+    list.addEventListener('click', function(ev) {
+      if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+      }
+    }, false);
+  </script>
+</body>
 
 </html>
