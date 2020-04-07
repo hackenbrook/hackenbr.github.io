@@ -1,16 +1,17 @@
 @charset "utf-8";
-/* CSS Document */
 
+/* CSS Document */
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
+
 #myVideo {
   position: fixed;
   right: 0;
-  bottom: 0;
+  top: 0;
   min-width: 100%;
-
 }
 
 /* Add some content at the bottom of the video/page */
@@ -19,30 +20,35 @@ html, body {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.text{	
-	position: fixed;
-	color: rgba(0, 0, 0, 0);
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 9.5vw; 
-	font-weight: bold;
-	margin: 0 auto;
-	top: 10%;
-	letter-spacing: .15em;
-	animation-name: typing;
-	animation-duration: 15s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
+.text {
+  position: fixed;
+  color: rgba(0, 0, 0, 0);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 9.5vw;
+  font-weight: bold;
+  margin: 0 auto;
+  top: 10%;
+  letter-spacing: .15em;
+  animation-name: typing;
+  animation-duration: 15s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { color: rgba(0, 0, 0, 0); }
-  to { color: rgba(200, 200, 200, 0.4); }
+  from {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    color: rgba(200, 200, 200, 0.4);
+  }
 }
 
 #myButton {
@@ -57,7 +63,7 @@ html, body {
   border: none;
   border-radius: 5px;
   outline: none;
-  background: rgba(80,80 , 80, 0.5);
+  background: rgba(80, 80, 80, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   opacity: 0.4;
   cursor: pointer;
@@ -65,113 +71,133 @@ html, body {
 }
 
 #myButton:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
-
 .buttonMove {
-    animation-name: moveButton;
-    animation-duration: .7s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation-name: moveButton;
+  animation-duration: .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes moveButton {
-    from {  top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    to {top:0;left:0;transform: translate(0,0);}
-
-}
-
-
-
-
-.scroll-down{
-    width:34px;
-    height: 55px;
-    position: fixed;
-    top: 90%;
+  from {
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  to {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.scroll-down {
+  width: 34px;
+  height: 55px;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mouse {
-    width: 3px;
-    padding: 5px 10px;
-    height: 30px;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    opacity: 0;
-    box-sizing: content-box;
-    animation-name: mouseFadeIn;
-    animation-duration: 5s;
-    animation-delay: 5s;
-	animation-fill-mode: forwards;
-}
-@keyframes mouseFadeIn {
-    0% { opacity:0;}
-    100% {opacity: 0.75;}
+  width: 3px;
+  padding: 5px 10px;
+  height: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  opacity: 0;
+  box-sizing: content-box;
+  animation-name: mouseFadeIn;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes mouseFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.75;
+  }
+}
 
 .scroll {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #ffffff;
-    animation-name: scrollDown;
-    animation-duration: 2.2s;
-    animation-iteration-count: infinite;
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #ffffff;
+  animation-name: scrollDown;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes scrollDown {
-    0% { opacity:0;}
-    10% { transform: translateY(0); opacity:1; }
-    100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 .fadeMouse {
-    animation-name: mouseFade;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation-name: mouseFade;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes mouseFade {
-    0% { opacity:1;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .pictures {
-    position: absolute;
-    top:100%;
-    height: 200px;
-    width: 100%;
-    padding: 0;
-    margin:0;
-    background-color: black;
-    text-align: center;
-    opacity: .9;
-    font-size: 64px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, sans-serif;
-    color: rgba(150,150,150,0.9)
+  position: absolute;
+  top: 100%;
+  height: 200px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  text-align: center;
+  opacity: .9;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, sans-serif;
+  color: rgba(150, 150, 150, 0.9)
 }
+
 .fab {
-    color: rgba(150,150,150,0.9);
-    margin: 40px;
-    
-
+  color: rgba(150, 150, 150, 0.9);
+  margin: 40px;
 }
+
 .subscribe {
-    background-color: rgba(150,150,150,0.9);
-    cursor: pointer;
-    border:thin;
-    border-radius: 10px;
-    height: 54px;
-    top: -20px;
-    position: relative;
-    
+  background-color: rgba(150, 150, 150, 0.9);
+  cursor: pointer;
+  border: thin;
+  border-radius: 10px;
+  height: 54px;
+  top: -20px;
+  position: relative;
 }
-
-
-
