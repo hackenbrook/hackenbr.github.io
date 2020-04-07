@@ -1,163 +1,170 @@
-
 /*Background and Page settings*/
 .page {
-	display: grid;
-	grid-template-areas:
-	"header header header"
-	"article article article"
-	"footer footer footer";
-
-	/*grid-template-columns: 20% 1fr 15%;*/
-
-	grid-auto-rows: 10vw minmax(78vh,auto) 8vh;
-	grid-gap: 10px;
-
-	margin: 0;
-	background-image: url("backgroundcomputer.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-	font-size: 20px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article article article"
+    "footer footer footer";
+  /*grid-template-columns: 20% 1fr 15%;*/
+  grid-auto-rows: 10vw minmax(78vh, auto) 8vh;
+  grid-gap: 10px;
+  margin: 0;
+  background-image: url("backgroundcomputer.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
 }
 
 /*Setting up Grids*/
-header { grid-area: header;}
-footer {grid-area: footer;}
-article { grid-area: article;align-items: start;}
+header {
+  grid-area: header;
+}
 
+footer {
+  grid-area: footer;
+}
+
+article {
+  grid-area: article;
+  align-items: start;
+}
 
 /*Syles*/
 header, footer, article {
-padding:10px;
-background: rgb(0, 0, 0); /* Fallback color */
-background: rgba(0, 0, 0, 0.5); /* Black background with 0.5*/
-color: rgb(255, 255, 255);
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
 }
+
 article {
-	padding:0px;
+  padding: 0px;
 }
 
 /*Title effects and cut out style*/
 #pageTitle {
-background-color: white;
-color: black;
-font-size: 9vw;
-top: 4.5vw;
-font-weight: bold;
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-margin: 0 auto;
-padding: 10px;
-position: absolute;
-text-align: center;
-white-space: nowrap;
-left: 50%;
-transform: translate(-50%, -50%);
-mix-blend-mode: screen;
-}
-
-.articleGrid {
-	display: grid;
-	grid-template-areas:
-	"column1 column2"
-	"articleFooter articleFooter";
-	grid-template-columns: 50% 50%;
-	grid-gap: 10px;
-}
-
-/*Page Columns
-.column1{
-	width: 50%;
-
-}
-.column2{
-	width: 50%;
-}*/
-a{
-	color:white;
-	font-size:1em;
-}
-
-a:hover {
-	color:#ECFF65;
-}
-
-
-.articleFooter {
-
-		margin-left: auto;
-		font-size: 36px;
-		text-align: center;
-
-}
-.articleFooter a{
-	color:white;
-}
-.articleFooter a:hover{
-	color:#ECFF65;
-}
-#transition {
-	width: 90vw;
-	/*box-shadow: 0 0 2px 4px rgba(255,255,255,.7);*/
-	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-	color: rgb(0, 0, 0, 0);
- 	animation: addText 2s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-}
-#annoucements {
-	opacity: 0;
-	animation: fadeIn 2s;
-	animation-delay: 2s;
-	animation-fill-mode: forwards;
-	list-style-position: inside;
-	padding:10px;
-	margin-left: 5px;
-	font-size: 20px;
-	width: 65%;
-	background-color: rgba(0,0,0, .6);
-	font-family:"Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
-@keyframes addText {
-  from {font-size: 0vw; }
-  to {
-	  font-size: 4.5vw;
-	  color: rgb(255, 255, 255, 1);
-	}
-}
-#top{margin: 2%}
-#middle{margin-left:17%;}
-#bottom{margin-left:15%;}
-
-
-#myList {
-	opacity: 0;
-	animation: fadeIn 2s;
-	animation-delay: 2s;
-	animation-fill-mode: forwards;
-	list-style-position: inside;
-	padding:0;
-	font-size: 2vw;
+  background-color: white;
+  color: black;
+  font-size: 9vw;
+  top: 4.5vw;
+  font-weight: bold;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin: 0 auto;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
 }
 
 .curriculum {
-	opacity: 0;
-	animation: fadeIn 2s;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
-	padding:0;
-	font-size: 1em;
+  display: grid;
+  grid-template-areas: "column1 column2";
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
 }
 
+.content {
+  margin-left: 20%;
+}
 
-.links a{
-	color:white;
-	
+a {
+  color: white;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #ECFF65;
+}
+
+.content {
+  margin-right: 0%;
+}
+
+.content a {
+  color: white;
+}
+
+.content a:hover {
+  color: #ECFF65;
+}
+
+#transition {
+  width: 90vw;
+  /*box-shadow: 0 0 2px 4px rgba(255,255,255,.7);*/
+  font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+  color: rgb(0, 0, 0, 0);
+  animation: addText 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#annoucements {
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  list-style-position: inside;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: 20px;
+  width: 65%;
+  background-color: rgba(0, 0, 0, .6);
+  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+@keyframes addText {
+  from {
+    font-size: 0vw;
+  }
+
+  to {
+    font-size: 4.5vw;
+    color: rgb(255, 255, 255, 1);
+  }
+}
+
+#top {
+  margin: 2%
+}
+
+#middle {
+  margin-left: 17%;
+}
+
+#bottom {
+  margin-left: 15%;
+}
+
+#myList {
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  list-style-position: inside;
+  padding: 0;
+  font-size: 2vw;
+}
+
+.curriculum {
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  padding: 0;
+  font-size: 1em;
+}
+
+.links a {
+  color: white;
 }
 
 .links a:hover {
-	color:#ECFF65;
+  color: #ECFF65;
 }
 
 /*Parallax Scroll, not really working yet*/
@@ -169,16 +176,14 @@ a:hover {
 	font-weight: bold;
 	font-size:36px;
 }*/
-
 form {
-	cursor: pointer;
-	display: inline;
+  cursor: pointer;
+  display: inline;
 }
+
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
-
-
 
 /*-----------------------------------------------------*/
 /*Effect for Side Panel, Hamburger Icon */
@@ -186,32 +191,32 @@ button {
   display: inline-block;
   cursor: pointer;
 }
+
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
   background-color: #E7E7E7;
   margin: 6px 0;
   transition: 0.4s;
-  z-index:2;
-  position:relative;
+  z-index: 2;
+  position: relative;
 }
 
 .change .bar1 {
- 	 -webkit-transform: rotate(-45deg) translate(-9px, 6px);
- 	-webkit-transform: translate(100px, 0px);
-	transform: translate(300px, 11px) rotate(-45deg);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: translate(100px, 0px);
+  transform: translate(300px, 11px) rotate(-45deg);
 }
 
 .change .bar2 {
-	opacity: 0;
-	-webkit-transform: translate(200px, 0px);
+  opacity: 0;
+  -webkit-transform: translate(200px, 0px);
 }
 
 .change .bar3 {
-  	-webkit-transform: rotate(45deg) translate(-8px, -8px);
- 	-webkit-transform: translate(100px, 0px);
- 	transform: translate(300px, -11px) rotate(45deg);
-
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: translate(100px, 0px);
+  transform: translate(300px, -11px) rotate(45deg);
 }
 
 /*Title Animations*/
@@ -222,39 +227,44 @@ button {
   -o-animation: fadeIn ease 4s;
   -ms-animation: fadeIn ease 4s;
 }
+
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -262,19 +272,28 @@ button {
 /* The side navigation menu */
 .sidenav {
   height: 90vw;
-  width: 0; /* 0 width - change this with JavaScript */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0vw ;
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: absolute;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0vw;
   left: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, .8); /* Black background with 0.5 opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, .8);
+  /* Black background with 0.5 opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
+
 .addLinks {
-opacity: 1;
+  opacity: 1;
 }
 
 /* The navigation menu links */
@@ -282,7 +301,7 @@ opacity: 1;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 36px;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #D3D3D3;
   display: block;
   transition: 0.3s;
@@ -293,15 +312,16 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #ECFFA7;
 }
 
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
-
-
 
 /*-----------------------------------------------------*/
 /*To Do List*/
@@ -310,13 +330,14 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 /* Style the list items */
 #myUL li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: rgb(0,0,0,.3);
+  background: rgb(0, 0, 0, .3);
   font-size: 18px;
   transition: 0.2s;
   /* make the list items unselectable */
@@ -328,21 +349,23 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
 /* Set all odd list items to a different color (zebra-stripes) */
 #myUL li:nth-child(odd) {
-  background: rgb(250,250,250,.5);
-	color:#000000;
+  background: rgb(250, 250, 250, .5);
+  color: #000000;
 }
 
 /* Darker background-color on hover */
 #myUL li:hover {
-   background: rgb(250,250,250,.8);
+  background: rgb(250, 250, 250, .8);
 }
+
 #myUL li:nth-child(even):hover {
-  background: rgb(0,0,0,.6);
+  background: rgb(0, 0, 0, .6);
 }
 
 /* When clicked on, add a background color and strike out text */
 #myUL li.checked {
-  background: rgb(0,0,0,.6);;
+  background: rgb(0, 0, 0, .6);
+  ;
   color: #fff;
   text-decoration: line-through;
 }
