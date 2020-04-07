@@ -73,7 +73,7 @@ mix-blend-mode: screen;
 }
 a{
 	color:white;
-	font-size:2vw;
+	font-size:1em;
 }
 
 a:hover {
