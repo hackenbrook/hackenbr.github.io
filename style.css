@@ -39,8 +39,8 @@ header, footer, article {
   color: rgb(255, 255, 255);
 }
 
-article {
-  padding: 0px;
+h2 {
+  margin-left: 20px;
 }
 
 /*Title effects and cut out style*/
@@ -68,8 +68,12 @@ article {
   grid-gap: 10px;
 }
 
-.content {
-  margin-left: 20%;
+.curriculum1 {
+  margin-left: 40%;
+}
+
+.curriculum2 {
+  margin-left: 10%;
 }
 
 a {
@@ -82,7 +86,7 @@ a:hover {
 }
 
 .content {
-  margin-right: 0%;
+  margin-left: 20%;
 }
 
 .content a {
@@ -95,7 +99,6 @@ a:hover {
 
 #transition {
   width: 90vw;
-  /*box-shadow: 0 0 2px 4px rgba(255,255,255,.7);*/
   font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
   color: rgb(0, 0, 0, 0);
   animation: addText 2s;
@@ -110,11 +113,28 @@ a:hover {
   animation-fill-mode: forwards;
   list-style-position: inside;
   padding: 10px;
-  margin-left: 5px;
   font-size: 20px;
   width: 65%;
   background-color: rgba(0, 0, 0, .6);
   font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+table.classTimes {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: .5px solid white;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: rgb(50, 50, 0);
+}
+
+td {
+  background-color: rgb(0, 40, 50, .5);
 }
 
 @keyframes addText {
