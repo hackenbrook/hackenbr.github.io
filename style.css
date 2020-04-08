@@ -37,6 +37,8 @@ header, footer, article {
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-size: 24px;
 }
 
 h2 {
@@ -66,14 +68,12 @@ h2 {
   grid-template-areas: "column1 column2";
   grid-template-columns: 50% 50%;
   grid-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.curriculum1 {
-  margin-left: 40%;
-}
-
-.curriculum2 {
-  margin-left: 10%;
+.curriculum {
+  width: 80%;
 }
 
 a {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .content {
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .content a {
@@ -113,7 +113,7 @@ a:hover {
   animation-fill-mode: forwards;
   list-style-position: inside;
   padding: 10px;
-  font-size: 20px;
+  font-size: 24px;
   width: 65%;
   background-color: rgba(0, 0, 0, .6);
   font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
